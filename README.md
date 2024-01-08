@@ -34,20 +34,7 @@ react-diary
 ├─ package.json
 ├─ public
 │  ├─ assets
-│  │  ├─ emotion1.png
-│  │  ├─ emotion2.png
-│  │  ├─ emotion3.png
-│  │  ├─ emotion4.png
-│  │  ├─ emotion5.png
-│  │  ├─ icon-pen-edit.png
-│  │  └─ icon-right.png
-│  ├─ favicon.ico
-│  ├─ index.html
-│  ├─ logo192.png
-│  ├─ logo512.png
-│  ├─ manifest.json
-│  └─ robots.txt
-├─ README.md
+│  │  
 └─ src
    ├─ App.css
    ├─ App.js
