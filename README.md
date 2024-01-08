@@ -51,6 +51,9 @@ https://yzinnie-react-project.web.app/
 #### 일기를 삭제합니다.
 - 기록하고 싶지 않은 내용은 삭제할 수 있어요.
 
+#### 일기 정렬 기능
+- 일기를 최신순과 감정순으로 정렬할 수 있어요.
+
 <br>
 
 ## Architecture
