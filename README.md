@@ -1,12 +1,13 @@
 <div align="center">
-<h2> Diary of Emotions 📓</h2>
+
 <h4>오늘 나의 감정 기록하기</h4> 
+<h4>오늘의 한 줄 일기</h4>
 
 <img src="https://github.com/yzinnie/My-Diary-Of-Emotions/assets/126447980/4ef91669-7652-48b6-ad09-7e5d4b2a5921.png" width="200" />
 </div>
 
 <h4>배포 주소</h4>
-https://yzinnie-react-project.web.app/
+https://emoji-diary-ver.firebaseapp.com/
 
 <br>
 
