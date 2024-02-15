@@ -96,6 +96,36 @@ header .head_btn_right {
   justify-content: end;
 }
 
+/* Start */
+.Start {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Start img {
+  width: 500px;
+}
+
+.start_button {
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding-right: 10px;
+  width: 200px;
+  height: 50px;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+
+.start_button:hover {
+  background-color: #ececec75;
+  color: black;
+}
+
 /* DiaryList */
 
 .DiaryList .menu_wrapper {
@@ -127,7 +157,7 @@ header .head_btn_right {
   font-size: 16px;
 }
 
-.new_button {
+.DiaryList .new_button {
   background-color: #000000;
   color: #fff;
   border: none;
@@ -180,9 +210,6 @@ header .head_btn_right {
 }
 
 /* DiaryEditor */
-
-.DiaryEditor {
-}
 
 .DiaryEditor section {
   margin-bottom: 40px;
@@ -265,10 +292,6 @@ header .head_btn_right {
 }
 
 /* Diary */
-
-.DiaryPage {
-}
-
 .DiaryPage section {
   width: 100%;
   margin-top: 20px;

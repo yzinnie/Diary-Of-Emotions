@@ -1,6 +1,5 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import MyButton from './MyButton';
 
 const DiaryItem = ({ id, emotion, content, date }) => {
   const navigate = useNavigate();
@@ -8,9 +7,7 @@ const DiaryItem = ({ id, emotion, content, date }) => {
   const goDetail = () => {
     navigate(`/diary/${id}`);
   };
-  // const goEdit = () => {
-  //   navigate(`/edit/${id}`);
-  // };
+
   return (
     <div className="DiaryItem">
       <div
@@ -22,15 +19,13 @@ const DiaryItem = ({ id, emotion, content, date }) => {
         <img
           src={process.env.PUBLIC_URL + `assets/emotion${emotion}.png`}
           onClick={goDetail}
+          alt="emotion"
         />
       </div>
       <div className="info_wrapper" onClick={goDetail}>
         <div className="diary_date">{strDate}</div>
         <div className="diary_content_preview">{content.slice(0, 40)}</div>
       </div>
-      {/* <div className="btn_wrapper">
-        <MyButton onClick={goEdit} text={'수정'} />
-      </div> */}
     </div>
   );
 };

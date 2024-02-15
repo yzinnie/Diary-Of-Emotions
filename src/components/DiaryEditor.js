@@ -26,9 +26,7 @@ const DiaryEditor = ({ isEdit, originData }) => {
       contentRef.current.focus();
       return;
     }
-    // if (
-    //   window.confirm(isEdit ? '일기를 수정합니다' : '새로운 일기를 작성합니다')
-    // )
+
     if (!isEdit) {
       onCreate(date, content, emotion);
     } else {

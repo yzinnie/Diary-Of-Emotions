@@ -65,7 +65,6 @@ const DiaryList = ({ diaryList }) => {
     <div className="DiaryList">
       <div className="menu_wrapper">
         <div className="left_col">
-          {' '}
           <ControlMenu
             value={sortType}
             onChange={setSortType}
