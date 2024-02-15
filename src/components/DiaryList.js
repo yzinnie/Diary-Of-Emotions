@@ -78,7 +78,7 @@ const DiaryList = ({ diaryList }) => {
         </div>
         <div>
           <button className="new_button" onClick={() => navigate('/new')}>
-            오늘의 한 줄 일기
+            일기 작성
           </button>
         </div>
       </div>

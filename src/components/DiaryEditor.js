@@ -33,13 +33,13 @@ const DiaryEditor = ({ isEdit, originData }) => {
       onEdit(originData.id, date, content, emotion);
     }
 
-    navigate('/', { replace: true });
+    navigate('/home', { replace: true });
   };
 
   const handleRemove = () => {
     if (window.confirm('일기를 삭제합니다.')) {
       onRemove(originData.id);
-      navigate('/', { replace: true });
+      navigate('/home', { replace: true });
     }
   };
 

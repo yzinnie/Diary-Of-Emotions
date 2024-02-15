@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "yzinnie-react-project",
+    "site": "emoji-diary-ver",
     "public": "build",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "rewrites": [

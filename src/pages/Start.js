@@ -9,7 +9,7 @@ const Start = () => {
         alt="icon-logo"
       />
       <button className="start_button" onClick={() => navigate('/home')}>
-        일기쓰러가기
+        오늘의 한 줄 일기
       </button>
     </div>
   );
