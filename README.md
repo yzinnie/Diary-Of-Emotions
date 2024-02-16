@@ -31,7 +31,7 @@ https://emoji-diary-ver.firebaseapp.com/
  #### Config
  <img src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white">
  
- #### Development
+#### Development
    <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">  <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black">  
 
 ####  Library
@@ -58,5 +58,36 @@ https://emoji-diary-ver.firebaseapp.com/
 #### 일기 정렬 기능
 - 일기를 최신순과 감정순으로 정렬할 수 있어요.
  
+---
+####  에러 처리 
+
+- 잘못된 경로
+  <br />
+존재하지 않은 일기에 접근할 경우
+<br/>
+이전 페이지 링크는 일기 리스트 홈으로 연결
+  <br />
+
+![image](https://github.com/yzinnie/diary/assets/126447980/eda4107a-acd2-47d6-86a1-8891949ef3a1)
+
+```
+  if (!data) {
+    return (
+      <div className="DiaryPage-message">
+        요청하신 페이지를 찾을 수 없습니다. <br /> 입력하신 주소를 다시 확인해
+        주세요.
+        <br />
+        <p onClick={() => navigate('/home')}>이전 페이지로 돌아가기</p>
+      </div>
+    );
+  } else {
+    const curEmotionData = emotionList.find(
+      (it) => parseInt(it.emotion_id) === parseInt(data.emotion)
+    );
+
+```
+#### to-do
+- [ ] 모바일 화면 구현
+- [ ] 배포 환경에서 기능 작동 계속 확인하기 
 
 
