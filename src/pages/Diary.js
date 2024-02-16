@@ -25,14 +25,20 @@ const Diary = () => {
       if (targetDiary) {
         setData(targetDiary);
       } else {
-        alert('없는 일기입니다🙅‍♀️');
-        navigate('/', { replace: true });
+        console.error('not found');
       }
     }
   }, [id, diaryList]);
 
   if (!data) {
-    return <div className="DiaryPage">Loading...</div>;
+    return (
+      <div className="DiaryPage-message">
+        요청하신 페이지를 찾을 수 없습니다. <br /> 입력하신 주소를 다시 확인해
+        주세요.
+        <br />
+        <p onClick={() => navigate('/home')}>이전 페이지로 돌아가기</p>
+      </div>
+    );
   } else {
     const curEmotionData = emotionList.find(
       (it) => parseInt(it.emotion_id) === parseInt(data.emotion)

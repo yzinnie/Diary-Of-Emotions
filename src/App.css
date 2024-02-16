@@ -311,6 +311,19 @@ header .head_btn_right {
   font-size: 18px;
 }
 
+.DiaryPage-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.DiaryPage-message p {
+  color: #cccccc;
+  cursor: pointer;
+}
+
 .DiaryPage .diary_img_wrapper img {
   width: 150px;
   height: 150px;
