@@ -3,12 +3,14 @@
 * {
   font-family: 'Noto Sans KR', sans-serif;
 }
+html {
+  font-size: 100%;
+}
 body {
   background-color: #f6f6f6;
   display: flex;
   justify-content: center;
   align-items: center;
-
   min-height: 100vh;
   margin: 0px;
 }
@@ -20,8 +22,17 @@ body {
 }
 
 @media (max-width: 650px) {
+  html {
+    font-size: 85%;
+  }
   .App {
     width: 90vw;
+  }
+  .menu_wrapper {
+    flex-direction: row;
+  }
+  .ControlMenu {
+    margin-bottom: 8px;
   }
 }
 
@@ -46,8 +57,8 @@ body {
   padding-bottom: 10px;
   padding-left: 20px;
   padding-right: 20px;
-  font-size: 16px;
   white-space: nowrap;
+  font-size: 100%;
 }
 
 .MyButton_default {
@@ -102,10 +113,11 @@ header .head_btn_right {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 
 .Start img {
-  width: 500px;
+  width: 300px;
 }
 
 .Start p {
@@ -158,7 +170,7 @@ header .head_btn_right {
   padding-left: 20px;
   padding-right: 20px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 100%;
 }
 
 .DiaryList .new_button {
@@ -170,7 +182,7 @@ header .head_btn_right {
   padding-right: 10px;
   width: 200px;
   height: 50px;
-  font-size: 16px;
+  font-size: 100%;
   transition: all 0.3s;
 }
 
@@ -220,7 +232,7 @@ header .head_btn_right {
 }
 
 .DiaryEditor h4 {
-  font-size: 18px;
+  font-size: 110%;
   font-weight: bold;
 }
 
@@ -247,7 +259,7 @@ header .head_btn_right {
 }
 
 .DiaryEditor textarea {
-  font-size: 15px;
+  font-size: 100%;
   box-sizing: border-box;
   width: 100%;
   min-height: 200px;
@@ -284,7 +296,7 @@ header .head_btn_right {
 }
 
 .EmotionItem span {
-  font-size: 17px;
+  font-size: 100%;
 }
 
 .EmotionItem_on_1,
