@@ -34,6 +34,9 @@ body {
   .ControlMenu {
     margin-bottom: 8px;
   }
+  .DiaryItem {
+    flex-wrap: wrap;
+  }
 }
 
 #root {
@@ -117,7 +120,7 @@ header .head_btn_right {
 }
 
 .Start img {
-  width: 300px;
+  width: 40%;
 }
 
 .Start p {
@@ -203,7 +206,7 @@ header .head_btn_right {
 
 .DiaryItem .emotion_img_wrapper {
   cursor: pointer;
-  min-width: 120px;
+  min-width: 20%;
   height: 60px;
   border-radius: 5px;
   display: flex;
